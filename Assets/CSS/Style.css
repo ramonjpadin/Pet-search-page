@@ -80,3 +80,58 @@ body {
     }
 
 }
+
+/*Search Page CSS*/
+
+.Search_Desc{
+    margin-left: 20%;
+    margin-top: 50px;
+    margin-right: 20%;
+    text-align: center;
+}
+
+.Search_Desc h1{
+    color: var(--Trim);
+    font-size: 40px;
+}
+
+.Search_Desc p{
+    font-size: 25px;
+}
+
+.Search_Querys{
+    background-color: var(--Trim);
+    color: var(--Back);
+    padding: 10%;
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+fieldset{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.normQuer{
+    display: block;
+    border-color: var(--Back);
+    border-style: solid;
+}
+
+.advQuer{
+    display: block;
+    border-color: var(--Back);
+    border-style: solid;
+}
+
+.supQuer{
+    display: block;
+    border-color: var(--Back);
+    border-style: solid;
+}
+
+.hidden{
+    display: none;
+}
