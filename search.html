@@ -24,6 +24,9 @@
         </article>
 
         <form class="Search_Querys">
+
+            <p style="text-align: center;">NOTE: if no checkboxes selected then search will include all querys</p>
+
             <fieldset class="normQuer">
                 <legend>Search Querys</legend>
                 <legend>Select Species: </legend>
@@ -63,7 +66,7 @@
                 <input type="checkbox" name="Gender" id="Gender-3">
             </fieldset>
 
-            <fieldset class="advQuer">
+            <fieldset class="advQuer hidden" id="advQuer">
                 <legend>Advanced Querys</legend>
                 <legend>Select Specific Breeds: </legend>
                 <label for="breed-1">Temp 1</label>
@@ -81,17 +84,17 @@
                 <label for="Color-3">Temp 2</label>
                 <input type="checkbox" name="Color" id="Color-3">
 
-                <legend>Select Specific Colors: </legend>
-                <label for="Color-1">Temp 1</label>
-                <input type="checkbox" name="Color" id="Color-1">
-                <label for="Color-2">Temp 2</label>
-                <input type="checkbox" name="Color" id="Color-2">
-                <label for="Color-3">Temp 2</label>
-                <input type="checkbox" name="Color" id="Color-3">
+                <legend>Select Specific Coats: </legend>
+                <label for="Coat-1">Temp 1</label>
+                <input type="checkbox" name="Coat" id="Coat-1">
+                <label for="Coat-2">Temp 2</label>
+                <input type="checkbox" name="Coat" id="Coat-2">
+                <label for="Coat-3">Temp 2</label>
+                <input type="checkbox" name="Coat" id="Coat-3">
             </fieldset>
 
 
-            <fieldset class="supQuer">
+            <fieldset class="supQuer hidden" id="supQuer">
                 <legend>Super Advanced Querys</legend>
                 <label for="Children">Good With Children?</label>
                 <select name="Children" id="Children">
@@ -135,6 +138,11 @@
                     <option selected="selected">Doesn't Matter</option>
                 </select>
             </fieldset>
+
+            <button class="advBtn hidden" id="advBtn2">Show More Advanced Options</button>
+            <button class="advBtn" id="advBtn1">Show Advanced Options</button>
+
+            <button class="searchBtn" id="searchBtn">Search!</button>
 
         </form>
 

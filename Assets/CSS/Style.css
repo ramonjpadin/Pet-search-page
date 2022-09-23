@@ -112,6 +112,7 @@ fieldset{
     text-align: center;
     margin-bottom: 15px;
     font-size: 20px;
+    user-select: none;
 }
 
 .normQuer{
@@ -134,4 +135,48 @@ fieldset{
 
 .hidden{
     display: none;
+}
+
+.advBtn{
+    width: 100%;
+    background-color: var(--Trim);
+    filter: brightness(90%);
+    color: var(--Back);
+    font-size: 35px;
+    border-style: solid;
+    border-color: var(--Back);
+    font-family: "Roboto Slab", sans-serif;
+    margin-bottom: 10px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.advBtn:hover{
+    filter: brightness(100%);
+    transition: 0.25s;
+}
+
+.searchBtn{
+    background-color: #087E8B;
+    color: var(--Back);
+    border: none;
+    border-radius: 20px;
+    font-size: 75px;
+    width: 80%;
+    font-family: "Roboto Slab", sans-serif;
+    margin: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.searchBtn:hover{
+    color: var(--Front);
+    background-color: var(--Back);
+    transition: 0.25s;
+}
+
+label,input,select{
+    cursor: pointer;
 }
