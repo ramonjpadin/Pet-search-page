@@ -80,3 +80,147 @@ body {
     }
 
 }
+
+/*Search Page CSS*/
+
+.Search_Desc{
+    margin-left: 20%;
+    margin-top: 50px;
+    margin-right: 20%;
+    text-align: center;
+}
+
+.Search_Desc h1{
+    color: var(--Trim);
+    font-size: 40px;
+}
+
+.Search_Desc p{
+    font-size: 25px;
+}
+
+.Search_Querys{
+    background-color: var(--Trim);
+    color: var(--Back);
+    padding: 10%;
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+fieldset{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+    user-select: none;
+}
+
+.normQuer{
+    display: block;
+    border-color: var(--Back);
+    border-style: solid;
+}
+
+.advQuer{
+    display: block;
+    border-color: var(--Back);
+    border-style: solid;
+}
+
+.supQuer{
+    display: block;
+    border-color: var(--Back);
+    border-style: solid;
+}
+
+.hidden{
+    display: none;
+}
+
+.advBtn{
+    width: 100%;
+    background-color: var(--Trim);
+    filter: brightness(90%);
+    color: var(--Back);
+    font-size: 35px;
+    border-style: solid;
+    border-color: var(--Back);
+    font-family: "Roboto Slab", sans-serif;
+    margin-bottom: 10px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.advBtn:hover{
+    filter: brightness(100%);
+    transition: 0.25s;
+}
+
+.searchBtn{
+    background-color: #087E8B;
+    color: var(--Back);
+    border: none;
+    border-radius: 20px;
+    font-size: 75px;
+    width: 80%;
+    font-family: "Roboto Slab", sans-serif;
+    margin: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.searchBtn:hover{
+    color: var(--Front);
+    background-color: var(--Back);
+    transition: 0.25s;
+}
+
+label,input,select{
+    cursor: pointer;
+}
+
+.petContainer{
+    margin: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    filter: brightness(100%);
+}
+
+.petContainer div{
+    width: 350px;
+    height: 350px;
+    background-color: var(--Front);
+    border-radius: 30px;
+    overflow: hidden;
+    background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/golden-retriever-royalty-free-image-506756303-1560962726.jpg?crop=0.672xw:1.00xh;0.166xw,0&resize=640:*");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    filter: brightness(100%);
+    transition: 0.25s;
+}
+
+.petContainer div:hover{
+    filter: brightness(120%);
+    transition: 0.50s;
+}
+
+.petContainer h1{
+    width: 100%;
+    background-color: #f1f7ed83;
+    backface-visibility: 50%;
+    margin: 0px;
+    margin-top: 250px;
+    font-size: 35px;
+}
+
+.petContainer h2{
+    width: 100%;
+    background-color: #f1f7ed83;
+    backface-visibility: 50%;
+    margin: 0px;
+
+}
