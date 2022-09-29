@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --Back: #F1F7ED;
     --Front: #087E8B;
     --Trim: #F19C79;
@@ -13,7 +13,7 @@ body {
 
 /* NavBar Css */
 
-.NavBar {
+/* .NavBar { 
     background-color: var(--Front);
     color: var(--Back);
     width: 100%;
@@ -79,4 +79,17 @@ body {
         margin-bottom: 0px;
     }
 
+}*/
+
+.portfolio-img-background {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
 }
