@@ -107,7 +107,7 @@ body {
     background-repeat: no-repeat;
 }
 
-.img-text-wrapper:hover .subtitle {
+.img-text-wrapper:hover .subtitles {
     font-weight: 600;
     color: lightseagreen;
 }
