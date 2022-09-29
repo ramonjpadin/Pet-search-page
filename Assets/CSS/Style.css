@@ -80,16 +80,10 @@ body {
     }
 
 }*/
-
 .portfolio-img-background {
     height: 350px;
     width: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-.img-darken {
-    transition: 1s;
-    filter: brightness(10%);
 }
