@@ -8,7 +8,7 @@ var advQuer = $('#advQuer');
 var supQuer = $('#supQuer');
 
 //Other BTNs
-var searchBtn = $('#Quer');
+var searchBtn = $('#searchBtn');
 
 var petContainer = $('#petContainer');
 
@@ -77,13 +77,20 @@ advBtn2.click(function(e){
         supShow = true;
 });
 
-//
-
+//API getting
 searchBtn.click(function(e){
+    e.preventDefault();
 
-    var gQueryURL = "https://api.openweathermap.org/data/2.5/weather?lat=" + locale[0] + "&lon=" + locale[1] + "&appid=" + wAPIKey + "&units=imperial";
+    var gQueryURL = "https://api.petfinder.com/v2/animals";
+    var querys = {};
 
-    fetch(gQueryURL)
+    querys.type = "dog";
+
+    fetch(gQueryURL + new URLSearchParams(querys), {
+        headers: {
+          Authorization: "Bearer " + apiCode
+        }
+    })
     .then((response) => response.json())
     .then(function (data){
         console.log
