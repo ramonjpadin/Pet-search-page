@@ -80,7 +80,7 @@ body {
     }
 
 }*/
-.img-text-wrapper {
+/*.img-text-wrapper {
     position: absolute;
     top: 0;
     display: flex;
@@ -91,20 +91,9 @@ body {
     text-align: center;
     padding-left: 100px;
     padding-right: 100px;
-}
-
-.img-text-wrapper .subtitle {
-    transition: 1s;
-    font-weight: 600;
-    color: transparent;
-}
-
-.portfolio-img-background {
-    height: 350px;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+} */
+.diff-font {
+    font-family: 'ABeeZee', serif;
 }
 
 .img-text-wrapper:hover .subtitles {
