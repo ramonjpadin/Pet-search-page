@@ -10,9 +10,15 @@ var supQuer = $('#supQuer');
 //Other BTNs
 var searchBtn = $('#Quer');
 
+var petContainer = $('#petContainer');
+
 var advShow = false;
 var thisParams = getParams();
 autoSelect(thisParams);
+
+//test function
+//var guyImg = "https://www.cdc.gov/injury/images/pressroom/sme/GeryGuy_285x360.png";
+//CreateResult(guyImg, "Guy", "Person", "Dood", "none=none")
 
 //Parameter Catching
 function getParams() {
@@ -84,7 +90,25 @@ searchBtn.click(function(e){
     })
 })
 
-//
-function CreateResult (img, name, species, breed){
+//Creates the listing
+function CreateResult (img, name, species, breed, pams){
+    //initializing elements
+    var linkEl = $('<a>');
+    var containerEl = $('<div>');
+    var nameEl = $('<h1>');
+    var descEl = $('<h2>');
 
+    linkEl.html('<a href="./petPage.html?'+ pams + '"></a>');
+    linkEl.attr("href", './petPage.html?' + pams)
+
+    containerEl.css("background-image",'url("' + img + '")');
+    linkEl.append(containerEl);
+
+    nameEl.text(name);
+    containerEl.append(nameEl);
+
+    descEl.text(species + " - " + breed);
+    containerEl.append(descEl);
+
+    petContainer.append(linkEl)
 }

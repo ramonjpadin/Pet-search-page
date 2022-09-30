@@ -224,3 +224,8 @@ label,input,select{
     margin: 0px;
 
 }
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
