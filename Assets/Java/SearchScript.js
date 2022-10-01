@@ -1,3 +1,11 @@
+const burgerIcon = document.querySelector('#burger');
+const navbarMenu = document.querySelector('#nav-links');
+
+burgerIcon.addEventListener('click', () => {
+    navbarMenu.classList.toggle('is-active');
+});
+
+
 var apiCode = "pSIHbptoz8mLgn5KonemY0MUsxaC0nsu3rRhAD3Kz19RVhwXlv";
 
 //Query BTNs
@@ -12,15 +20,15 @@ var searchBtn = $('#supQuer');
 var advShow = false;
 
 //These two functions control the query accordion
-advBtn1.click(function(e){
-    if(advShow){
+advBtn1.click(function (e) {
+    if (advShow) {
         e.preventDefault();
         advBtn2.addClass("hidden");
         advQuer.addClass("hidden");
         supQuer.addClass("hidden");
         advBtn1.text("Show Advanced Options");
         advShow = false;
-    }else{
+    } else {
         e.preventDefault();
         advBtn2.removeClass("hidden");
         advQuer.removeClass("hidden");
@@ -30,11 +38,11 @@ advBtn1.click(function(e){
 
 });
 
-advBtn2.click(function(e){
-        e.preventDefault();
-        advBtn2.addClass("hidden");
-        supQuer.removeClass("hidden");
-        supShow = true;
+advBtn2.click(function (e) {
+    e.preventDefault();
+    advBtn2.addClass("hidden");
+    supQuer.removeClass("hidden");
+    supShow = true;
 });
 
 //

@@ -1,4 +1,4 @@
-:root {
+/*:root {
     --Back: #F1F7ED;
     --Front: #087E8B;
     --Trim: #F19C79;
@@ -13,7 +13,7 @@ body {
 
 /* NavBar Css */
 
-.NavBar {
+/*.NavBar {
     background-color: var(--Front);
     color: var(--Back);
     width: 100%;
@@ -79,11 +79,11 @@ body {
         margin-bottom: 0px;
     }
 
-}
+}*/
 
 /*Search Page CSS*/
 
-.Search_Desc{
+/*.Search_Desc{
     margin-left: 20%;
     margin-top: 50px;
     margin-right: 20%;
@@ -131,13 +131,13 @@ fieldset{
     display: block;
     border-color: var(--Back);
     border-style: solid;
-}
+}*/
 
-.hidden{
+.hidden {
     display: none;
 }
 
-.advBtn{
+/*.advBtn{
     width: 100%;
     background-color: var(--Trim);
     filter: brightness(90%);
@@ -179,9 +179,13 @@ fieldset{
 
 label,input,select{
     cursor: pointer;
+}*/
+
+.diff-font {
+    font-family: 'ABeeZee', serif;
 }
 
-.petContainer{
+.petContainer {
     margin: 5%;
     display: flex;
     flex-wrap: wrap;
@@ -189,7 +193,7 @@ label,input,select{
     filter: brightness(100%);
 }
 
-.petContainer div{
+.petContainer div {
     width: 350px;
     height: 350px;
     background-color: var(--Front);
@@ -198,17 +202,17 @@ label,input,select{
     background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/golden-retriever-royalty-free-image-506756303-1560962726.jpg?crop=0.672xw:1.00xh;0.166xw,0&resize=640:*");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center; 
+    background-position: center center;
     filter: brightness(100%);
     transition: 0.25s;
 }
 
-.petContainer div:hover{
+.petContainer div:hover {
     filter: brightness(120%);
     transition: 0.50s;
 }
 
-.petContainer h1{
+.petContainer h1 {
     width: 100%;
     background-color: #f1f7ed83;
     backface-visibility: 50%;
@@ -217,7 +221,7 @@ label,input,select{
     font-size: 35px;
 }
 
-.petContainer h2{
+.petContainer h2 {
     width: 100%;
     background-color: #f1f7ed83;
     backface-visibility: 50%;
