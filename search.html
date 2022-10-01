@@ -44,14 +44,13 @@
         <form class="Search_Querys">
             <div class="column is-12">
                 <p class="has-text-centered has-background-dark has-text-info-light">NOTE: if no checkboxes selected
-                    then search will
-                    include all querys</p>
+                    then search will include all options</p>
             </div>
             <div class="columns diff-font">
                 <div class="column is-12 has-background-primary">
                     <fieldset class="normQuer">
-                        <legend class="is-uppercase">Search</legend>
-                        <legend class="has-text-weight-semibold">Species: </legend>
+                        <legend class="is-uppercase has-text-weight-bold is-size-4">Search</legend>
+                        <legend class="has-text-weight-medium">Species: </legend>
                         <label for="Species-1">Dog</label>
                         <input type="checkbox" name="Species" id="Species-1">
                         <label for="Species-2">Cat</label>
@@ -59,7 +58,7 @@
                         <label for="Species-3">Rabbit</label>
                         <input type="checkbox" name="Species" id="Species-3">
 
-                        <legend class="has-text-weight-semibold">Age: </legend>
+                        <legend class="has-text-weight-medium">Age: </legend>
                         <label for="Age-1">Baby</label>
                         <input type="checkbox" name="Age" id="Age-1">
                         <label for="Age-2">Young</label>
@@ -69,7 +68,7 @@
                         <label for="Age-4">Senior</label>
                         <input type="checkbox" name="Age" id="Age-4">
 
-                        <legend class="has-text-weight-semibold">Size: </legend>
+                        <legend class="has-text-weight-medium">Size: </legend>
                         <label for="Size-1">Small</label>
                         <input type="checkbox" name="Size" id="Size-1">
                         <label for="Size-2">Medium</label>
@@ -79,7 +78,7 @@
                         <label for="Size-4">X-large</label>
                         <input type="checkbox" name="Size" id="Size-4">
 
-                        <legend class="has-text-weight-semibold">Gender: </legend>
+                        <legend class="has-text-weight-medium">Gender: </legend>
                         <label for="Gender-1">Male</label>
                         <input type="checkbox" name="Gender" id="Gender-1">
                         <label for="Gender-2">Female</label>
@@ -87,8 +86,8 @@
                     </fieldset>
 
                     <fieldset class="advQuer hidden" id="advQuer">
-                        <legend>Advanced search</legend>
-                        <legend>Specific Breeds: </legend>
+                        <legend class="has-text-weight-medium">Advanced search</legend>
+                        <legend class="has-text-weight-medium">Specific Breeds: </legend>
                         <label for="breed-1">Temp 1</label>
                         <input type="checkbox" name="breed" id="breed-1">
                         <label for="breed-2">Temp 2</label>
@@ -96,7 +95,7 @@
                         <label for="breed-3">Temp 2</label>
                         <input type="checkbox" name="breed" id="breed-3">
 
-                        <legend>Select Specific Colors: </legend>
+                        <legend class="has-text-weight-medium">Select Specific Colors: </legend>
                         <label for="Color-1">Temp 1</label>
                         <input type="checkbox" name="Color" id="Color-1">
                         <label for="Color-2">Temp 2</label>
@@ -104,7 +103,7 @@
                         <label for="Color-3">Temp 2</label>
                         <input type="checkbox" name="Color" id="Color-3">
 
-                        <legend>Select Specific Coats: </legend>
+                        <legend class="has-text-weight-medium">Select Specific Coats: </legend>
                         <label for="Coat-1">Temp 1</label>
                         <input type="checkbox" name="Coat" id="Coat-1">
                         <label for="Coat-2">Temp 2</label>
@@ -116,42 +115,42 @@
 
                     <fieldset class="supQuer hidden" id="supQuer">
                         <legend>More advanced search</legend>
-                        <label for="Children">Good With Children?</label>
+                        <label for="Children" class="has-text-weight-medium">Good With Children?</label>
                         <select name="Children" id="Children">
                             <option>Yes</option>
                             <option>No</option>
                             <option selected="selected">Doesn't Matter</option>
                         </select>
                         <br>
-                        <label for="Dogs">Good With Dogs?</label>
+                        <label for="Dogs" class="has-text-weight-medium">Good With Dogs?</label>
                         <select name="Dogs" id="Dogs">
                             <option>Yes</option>
                             <option>No</option>
                             <option selected="selected">Doesn't Matter</option>
                         </select>
                         <br>
-                        <label for="Cats">Good With Cats?</label>
+                        <label for="Cats" class="has-text-weight-medium">Good With Cats?</label>
                         <select name="Cats" id="Cats">
                             <option>Yes</option>
                             <option>No</option>
                             <option selected="selected">Doesn't Matter</option>
                         </select>
                         <br>
-                        <label for="House">House Trained?</label>
+                        <label for="House" class="has-text-weight-medium">House Trained?</label>
                         <select name="House" id="House">
                             <option>Yes</option>
                             <option>No</option>
                             <option selected="selected">Doesn't Matter</option>
                         </select>
-                        <br>
+                        <!-- <br>
                         <label for="Declawed">Declawed?</label>
                         <select name="Declawed" id="Declawed">
                             <option>Yes</option>
                             <option>No</option>
                             <option selected="selected">Doesn't Matter</option>
                         </select>
-                        <br>
-                        <label for="Special">Special Needs?</label>
+                        <br> -->
+                        <label for="Special" class="has-text-weight-medium">Special Needs?</label>
                         <select name="Special" id="Special">
                             <option>Yes</option>
                             <option>No</option>
@@ -185,7 +184,8 @@
     <footer class="footer">
         <div class="content has-text-centered is-justify-content-center">
             <p>
-                <strong>Pet Finder App</strong> by <a href="./about.html">Jonathan, Ramon, Liam and Khalil.</a>
+                <strong class="is-italic">Pet Finder App</strong> by <a href="./about.html">Jonathan, Ramon, Liam and
+                    Khalil.</a>
             </p>
         </div>
 
