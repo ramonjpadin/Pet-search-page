@@ -57,9 +57,9 @@ body {
     color: var(--Trim);
     background-color: var(--Back);
     transition: 0.25s;
-}
+}*/
 
-@media screen and (max-width: 780px) {
+/*@media screen and (max-width: 780px) {
     .NavBar{
         display: block;
         margin-top: 0px;
