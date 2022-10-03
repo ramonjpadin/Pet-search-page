@@ -5,18 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./Assets/CSS/style.css">
     <title>About Us</title>
 </head>
+<!-- nav-bar -->
 
 <body>
-    <nav class="navbar has-shadow is-primary is-white">
+    <nav class="navbar has-shadow is-primary is-white diff-font">
         <div class="navbar-brand ">
             <a class="navbar-item">
                 <p class="is-size-2">Pet Search</p>
-                <img src="photos/pet.png" alt="logo" class="my-2">
+                <img src="assets/images/pet.png" alt="logo" class="my-2">
                 <a class="navbar-burger" id="burger">
                     <span></span>
                     <span></span>
@@ -25,7 +26,7 @@
             </a>
         </div>
 
-        <div class="navbar-menu" id="nav-links">
+        <div class="navbar-menu diff-font" id="nav-links">
             <div class="navbar-end">
                 <a class="navbar-item" href="index.html">Home</a>
                 <a class="navbar-item" href="search.html">Search</a>
@@ -33,64 +34,82 @@
             </div>
         </div>
     </nav>
-    <main class="about">
-        <h1>About Us</h1>
-        <p>Hello! Our team is currently students enrolled within the Case Western Coding Bootcamp. This is the teams
-            first major project. We are trying to build more awareness towards animals.</p>
-    </main>
-
-    <h2 class="theTeam">The Team</h2>
-
-    <div class="column">
-        <div class="card">
-            <div class="container">
-                <img class="teamImg" src="assets\images\Mahmoud.png">
-                <h3>Mahmoud Khalil</h3>
-                <p> Hello. I am Mahmoud Khalil. I believe all humans should show love and care towards animals. </p>
-                <ul>
-                    <a href="mailto:khalilmahmoud2333@gmail.com">khalilmahmoud2333@gmail.com</a>
-                </ul>
-                <ul>
-                    <a href="tel:4405417202">440-541-7202</a>
-                </ul>
+    <!--breadcrumbs-->
+    <nav class="breadcrumb has-bullet-separator is-small is-centered pt-6 mt-6" aria-label="breadcrumbs">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="is-active"><a href="about.html" aria-current="page">About</a></li>
+        </ul>
+    </nav>
+    <!--meet the team section-->
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-12">
+                    <p class="is-size-1 diff-font has-text-centered">Meet the team!</p>
+                    <p class="is-size-3 diff-font has-text-centered">We created this application to help find homes for
+                        all animals in need! </p>
+                </div>
             </div>
         </div>
-    </div>
-
-    <div class="column">
-        <div class="card">
-            <div class="container">
-                <img class="teamImg" src="assets\images\Ramon.png">
-                <h3>Ramon Padin</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et inventore natus libero excepturi error.
-                    Tempora cum totam aliquam sunt ipsa, sapiente corporis debitis nobis a saepe, qui eos minus atque?
-                </p>
-                <ul>
-                    <a href=""></a>
-                </ul>
-                <ul>
-                    <a href=""></a>
-                </ul>
+    </section>
+    <!--about us info -->
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-4">
+                    <figure class="image is-350x350">
+                        <img class="is-rounded" src="assets\images\Mahmoud.png">
+                    </figure>
+                    <p class="is-size-3 has-text-centered">Mahmoud</p>
+                </div>
+                <div class="column is-4">
+                    <figure class="image is-350x350">
+                        <img class="is-rounded" src="assets\images\Ramon.png">
+                    </figure>
+                    <p class="is-size-3 has-text-centered">Ramon</p>
+                </div>
+                <div class="column is-4">
+                    <figure class="image is-350x350">
+                        <img class="is-rounded" src="assets\images\Jonathan.png">
+                    </figure>
+                    <p class="is-size-3 has-text-centered">Jonathan</p>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+    <section class="section diff-font">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-4">
+                    <p class="is-size-6 has-text-centered">Hello. I am Mahmoud Khalil. I believe all humans
+                        should show love and care towards animals.</p>
+                    <a class="is size-6 has-text-centered" href="https://github.com/MHKhalil">Github</a></p>
+                </div>
+                <div class="column is-4">
+                    <p class="is-size-6 has-text-centered">My name is Ramon and I am a budding dev, this is our first
+                        project so enjoy! </p>
+                    <p><a class="is size-6 has-text-centered" href="https://github.com/ramonjpadin">Github</a></p>
+                </div>
+                <div class="column is-4">
+                    <p class="is-size-6 has-text-centered">My name is Jonathan and I am a budding Software Engineer!</p>
+                    <p><a class="is size-6 has-text-centered" href="https://github.com/JonnyDBeck">Github</a></p>
 
-    <div class="column">
-        <div class="card">
-            <div class="container">
-                <img class="teamImg" src="assets\images\Jonathan.png">
-                <h3>Jonathan Beck</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nihil sint. A quasi velit illo
-                    veritatis nemo fugit possimus sequi ea deleniti. Odio dolore veritatis ea quia aliquid illum ut?</p>
-                <ul>
-                    <a href=""></a>
-                </ul>
-                <ul>
-                    <a href=""></a>
-                </ul>
+                </div>
             </div>
         </div>
+    </section>
+
+    <footer class="footer">
+        <div class="content has-text-centered is-justify-content-center">
+            <p>
+                <strong>Pet Finder App</strong> by <a href="./about.html">Jonathan, Ramon and Khalil.</a>
+            </p>
+        </div>
+    </footer>
+
     </div>
-</body>
+    <script src=" script.js">
+    </script>
 
 </html>
