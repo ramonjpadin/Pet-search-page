@@ -224,3 +224,48 @@ label,input,select{
     margin: 0px;
 
 }
+
+/*About Page CSS*/
+
+.about {
+    padding: 50px;
+    text-align: center;
+    background-color: #087E8B;
+    color: #F1F7ED;
+}
+
+.theTeam {
+    text-align: center;
+}
+
+.teamDiv {
+    text-align: center;
+    left: 50%;
+}
+
+.column {
+    padding: 0 8px;
+    margin-bottom: 16px;
+    width: 33.3%;
+    float: left;
+    text-align: center;
+    left: 50%;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+    text-align: center;
+    left: 50%;
+}
+
+.container {
+    padding: 0 16px;
+    text-align: center;
+    left: 50%;
+}
+
+.teamImg {
+    width: 100%;
+    height: 500px;
+}
