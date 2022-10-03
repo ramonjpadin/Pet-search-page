@@ -1,0 +1,135 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./Assets/CSS/Style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas+Neue&effect=emboss">
+    </head>
+    <body>
+        <header class="NavBar">
+            <h1 class="font-effect-emboss">Pet Search</h1>
+            <div class="Links">
+                <a href="index.html">Home</a>
+                <a href="search.html">Search</a>
+                <a href="about.html">About</a> 
+            </div>
+        </header>
+
+        <article class="Search_Desc">
+            <h1>Find your new best freind!</h1>
+            <p>
+                Use the search querys bellow to find your best match! Once searched,
+                we will fetch some pets that match.
+                you may click on a pet's profile to read more about them!
+            </p>
+        </article>
+
+        <form class="Search_Querys">
+
+            <p style="text-align: center;">NOTE: if no checkboxes selected then search will include all querys</p>
+
+            <fieldset class="normQuer" id="normQuer">
+                <legend>Search Querys</legend>
+                <legend>Select Species: </legend>
+                <label for="Species-1">Dog</label>
+                <input type="radio" name="Species" id="Species-1">
+                <label for="Species-2">Cat</label>
+                <input type="radio" name="Species" id="Species-2">
+                <label for="Species-3">Rabbit</label>
+                <input type="radio" name="Species" id="Species-3">
+                <label for="Species-4">Small & Furry</label>
+                <input type="radio" name="Species" id="Species-4">
+                <label for="Species-5">Horse</label>
+                <input type="radio" name="Species" id="Species-5">
+                <label for="Species-6">Bird</label>
+                <input type="radio" name="Species" id="Species-6">
+                <label for="Species-7">Scales, Fins & Other</label>
+                <input type="radio" name="Species" id="Species-7">
+                <label for="Species-8">Barnyard</label>
+                <input type="radio" name="Species" id="Species-8">
+
+                <legend>Select Age: </legend>
+                <label for="Age-1">Baby</label>
+                <input type="checkbox" name="Age" id="Age-1">
+                <label for="Age-2">Young</label>
+                <input type="checkbox" name="Age" id="Age-2">
+                <label for="Age-3">Adult</label>
+                <input type="checkbox" name="Age" id="Age-3">
+                <label for="Age-4">Senior</label>
+                <input type="checkbox" name="Age" id="Age-4">
+
+                <legend>Select Size: </legend>
+                <label for="Size-1">Small</label>
+                <input type="checkbox" name="Size" id="Size-1">
+                <label for="Size-2">Medium</label>
+                <input type="checkbox" name="Size" id="Size-2">
+                <label for="Size-3">Large</label>
+                <input type="checkbox" name="Size" id="Size-3">
+                <label for="Size-4">X-large</label>
+                <input type="checkbox" name="Size" id="Size-4">
+
+                <legend>Select Gender: </legend>
+                <label for="Gender-1">Male</label>
+                <input type="checkbox" name="Gender" id="Gender-1">
+                <label for="Gender-2">Female</label>
+                <input type="checkbox" name="Gender" id="Gender-2">
+                <label for="Gender-3">Unknown</label>
+                <input type="checkbox" name="Gender" id="Gender-3">
+            </fieldset>
+
+            <fieldset class="advQuer hidden" id="advQuer">
+                <legend>Super Advanced Querys</legend>
+                <label for="Children">Good With Children?</label>
+                <select name="Children" id="Children">
+                    <option>Yes</option>
+                    <option>No</option>
+                    <option selected="selected">Doesn't Matter</option>
+                </select>
+                <br>
+                <label for="Dogs">Good With Dogs?</label>
+                <select name="Dogs" id="Dogs">
+                    <option>Yes</option>
+                    <option>No</option>
+                    <option selected="selected">Doesn't Matter</option>
+                </select>
+                <br>
+                <label for="Cats">Good With Cats?</label>
+                <select name="Cats" id="Cats">
+                    <option>Yes</option>
+                    <option>No</option>
+                    <option selected="selected">Doesn't Matter</option>
+                </select>
+                <br>
+                <label for="House">House Trained?</label>
+                <select name="House" id="House">
+                    <option>Yes</option>
+                    <option>No</option>
+                    <option selected="selected">Doesn't Matter</option>
+                </select>
+                <br>
+                <label for="Declawed">Declawed?</label>
+                <select name="Declawed" id="Declawed">
+                    <option>Yes</option>
+                    <option>No</option>
+                    <option selected="selected">Doesn't Matter</option>
+                </select>
+                <br>
+                <label for="Special">Special Needs?</label>
+                <select name="Special" id="Special">
+                    <option>Yes</option>
+                    <option>No</option>
+                    <option selected="selected">Doesn't Matter</option>
+                </select>
+            </fieldset>
+
+            <button class="advBtn" id="advBtn1">Show Advanced Options</button>
+
+            <button class="searchBtn" id="searchBtn">Search!</button>
+        </form>
+
+        <article class="petContainer" id="petContainer"></article>
+
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>      
+        <script type="text/javascript" src="./Assets/Java/SearchScript.JS"></script>
+    </body>
+</html>
