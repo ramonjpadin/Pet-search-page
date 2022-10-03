@@ -27,15 +27,25 @@
 
             <p style="text-align: center;">NOTE: if no checkboxes selected then search will include all querys</p>
 
-            <fieldset class="normQuer">
+            <fieldset class="normQuer" id="normQuer">
                 <legend>Search Querys</legend>
                 <legend>Select Species: </legend>
                 <label for="Species-1">Dog</label>
-                <input type="checkbox" name="Species" id="Species-1">
+                <input type="radio" name="Species" id="Species-1">
                 <label for="Species-2">Cat</label>
-                <input type="checkbox" name="Species" id="Species-2">
+                <input type="radio" name="Species" id="Species-2">
                 <label for="Species-3">Rabbit</label>
-                <input type="checkbox" name="Species" id="Species-3">
+                <input type="radio" name="Species" id="Species-3">
+                <label for="Species-4">Small & Furry</label>
+                <input type="radio" name="Species" id="Species-4">
+                <label for="Species-5">Horse</label>
+                <input type="radio" name="Species" id="Species-5">
+                <label for="Species-6">Bird</label>
+                <input type="radio" name="Species" id="Species-6">
+                <label for="Species-7">Scales, Fins & Other</label>
+                <input type="radio" name="Species" id="Species-7">
+                <label for="Species-8">Barnyard</label>
+                <input type="radio" name="Species" id="Species-8">
 
                 <legend>Select Age: </legend>
                 <label for="Age-1">Baby</label>
@@ -67,34 +77,6 @@
             </fieldset>
 
             <fieldset class="advQuer hidden" id="advQuer">
-                <legend>Advanced Querys</legend>
-                <legend>Select Specific Breeds: </legend>
-                <label for="breed-1">Temp 1</label>
-                <input type="checkbox" name="breed" id="breed-1">
-                <label for="breed-2">Temp 2</label>
-                <input type="checkbox" name="breed" id="breed-2">
-                <label for="breed-3">Temp 2</label>
-                <input type="checkbox" name="breed" id="breed-3">
-
-                <legend>Select Specific Colors: </legend>
-                <label for="Color-1">Temp 1</label>
-                <input type="checkbox" name="Color" id="Color-1">
-                <label for="Color-2">Temp 2</label>
-                <input type="checkbox" name="Color" id="Color-2">
-                <label for="Color-3">Temp 2</label>
-                <input type="checkbox" name="Color" id="Color-3">
-
-                <legend>Select Specific Coats: </legend>
-                <label for="Coat-1">Temp 1</label>
-                <input type="checkbox" name="Coat" id="Coat-1">
-                <label for="Coat-2">Temp 2</label>
-                <input type="checkbox" name="Coat" id="Coat-2">
-                <label for="Coat-3">Temp 2</label>
-                <input type="checkbox" name="Coat" id="Coat-3">
-            </fieldset>
-
-
-            <fieldset class="supQuer hidden" id="supQuer">
                 <legend>Super Advanced Querys</legend>
                 <label for="Children">Good With Children?</label>
                 <select name="Children" id="Children">
@@ -139,26 +121,12 @@
                 </select>
             </fieldset>
 
-            <button class="advBtn hidden" id="advBtn2">Show More Advanced Options</button>
             <button class="advBtn" id="advBtn1">Show Advanced Options</button>
 
             <button class="searchBtn" id="searchBtn">Search!</button>
         </form>
 
-        <article class="petContainer" id="petContainer">
-            <div>
-                <h1>Sample Name</h1>
-                <h2>Species - Breed</h2>
-            </div>
-            <div>
-                <h1>Sample Name</h1>
-                <h2>Species - Breed</h2>
-            </div>
-            <div>
-                <h1>Sample Name</h1>
-                <h2>Species - Breed</h2>
-            </div>
-        </article>
+        <article class="petContainer" id="petContainer"></article>
 
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>      
