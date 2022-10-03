@@ -1,3 +1,4 @@
+//api codes
 var apiCode = "pSIHbptoz8mLgn5KonemY0MUsxaC0nsu3rRhAD3Kz19RVhwXlv";
 var sApiCode = "jaUgYeFFgUvh3pKQdoHBtw0Iw9eDAXjwfmFfDhVt";
 
@@ -9,8 +10,10 @@ var advQuer = $('#advQuer');
 //Other BTNs
 var searchBtn = $('#searchBtn');
 
+//containers
 var petContainer = $('#petContainer');
 
+//initializing
 var advShow = false;
 var thisParams = getParams();
 autoSelect(thisParams);
@@ -29,6 +32,7 @@ function getParams() {
     return params;
 }
 
+//checks boxes based on previous link
 function autoSelect(pams){
     switch (pams.species){
         case "dog":
@@ -39,9 +43,6 @@ function autoSelect(pams){
             break;
         case "small%20animals":
             $('#Species-4').prop( "checked", true );
-            break;
-        case "other%20animals":
-            //$('#Species-1').prop( "checked", true );
             break;
     }
 }
@@ -62,14 +63,18 @@ advBtn1.click(function(e){
 
 });
 
-//API getting
+//Search
 searchBtn.click(function(e){
     e.preventDefault();
+
+    //emptys container's previous contents
     petContainer.empty()
 
+    //Url elements
     var gQueryURL = "https://api.petfinder.com/v2/animals?";
     var querys = {};
 
+    //getting queries
     querys.type = getSpecies();
     querys.age = getAge()
     querys.size = getSize();
@@ -83,6 +88,7 @@ searchBtn.click(function(e){
     querys.declawed = otherQuers[4];
     querys.special_needs = otherQuers[5];
 
+    //calling API
     Object.keys(querys).forEach(key => {
         if (querys[key] === '') {
           delete querys[key];
@@ -105,8 +111,11 @@ searchBtn.click(function(e){
         })
         .then((response) => response.json())
         .then(function (data){
-            console.log(data);
+            //data retrived
+
+            //loops through data
             for(i=0; i < 20; i++){
+                //getting all needed data from specific pet
                 try{
                     var petImage = data.animals[i].photos[0].full;
                 }
@@ -116,38 +125,46 @@ searchBtn.click(function(e){
                 var petName = data.animals[i].name;
                 var petSpecies = data.animals[i].species;
                 var petBreed = data.animals[i].breeds.primary;
-                var petId = data.animals[i].id;
+                var petUrl = data.animals[i].url;
 
-                CreateResult(petImage, petName, petSpecies, petBreed, petId);
+                //creating result
+                CreateResult(petImage, petName, petSpecies, petBreed, petUrl);
             }
         })
     })
 })
 
 //Creates the listing
-function CreateResult (img, name, species, breed, id){
+function CreateResult (img, name, species, breed, url){
     //initializing elements
     var linkEl = $('<a>');
     var containerEl = $('<div>');
     var nameEl = $('<h1>');
     var descEl = $('<h2>');
 
-    linkEl.attr("href", './petPage.html?id=' + id)
+    //link
+    linkEl.attr("href", url);
 
+    //image
     if (img != "none"){
         containerEl.css("background-image",'url("' + img + '")');
     }
     linkEl.append(containerEl);
 
+    //name
     nameEl.text(name);
     containerEl.append(nameEl);
 
+    //species and breed
     descEl.text(species + " - " + breed);
     containerEl.append(descEl);
 
+    //push to the container
     petContainer.append(linkEl)
 }
 
+
+//all below functions are used to get the querys
 function getSpecies(){
     if ($('#Species-1').is(":checked")){
         return "dog"
