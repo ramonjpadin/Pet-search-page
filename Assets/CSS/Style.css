@@ -1,0 +1,18 @@
+.diff-font {
+    font-family: 'ABeeZee', serif;
+}
+
+.img-text-wrapper:hover .subtitles {
+    font-weight: 600;
+    color: lightseagreen;
+}
+
+.img-darken:hover {
+    transition: 1s;
+    filter: brightness(30%);
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(100%);
+}
