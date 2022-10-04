@@ -2,12 +2,13 @@
     --Back: #F1F7ED;
     --Front: #087E8B;
     --Trim: #F19C79;
+.diff-font {
+    font-family: 'ABeeZee', serif;
 }
 
-body {
-    background-color: var(--Back);
-    margin: 0%;
-    font-family: "Roboto Slab", sans-serif;
+.img-text-wrapper:hover .subtitles {
+    font-weight: 600;
+    color: lightseagreen;
 }
 
 
@@ -226,5 +227,14 @@ label,input,select{
     background-color: #f1f7ed83;
     backface-visibility: 50%;
     margin: 0px;
+}
 
+.img-darken:hover {
+    transition: 1s;
+    filter: brightness(30%);
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(100%);
 }
