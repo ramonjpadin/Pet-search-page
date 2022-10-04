@@ -49,7 +49,7 @@ function autoSelect(pams) {
         case "cat":
             $('#Species-2').prop("checked", true);
             break;
-        case "small%20animals":
+        case "small_animals":
             $('#Species-4').prop("checked", true);
             break;
     }
@@ -71,12 +71,6 @@ advBtn1.click(function (e) {
 
 });
 
-advBtn2.click(function (e) {
-    e.preventDefault();
-    advBtn2.addClass("hidden");
-    supQuer.removeClass("hidden");
-    supShow = true;
-});
 //Search
 searchBtn.click(function (e) {
     e.preventDefault();
@@ -99,8 +93,7 @@ searchBtn.click(function (e) {
     querys.good_with_dogs = otherQuers[1];
     querys.good_with_cats = otherQuers[2];
     querys.house_trained = otherQuers[3];
-    querys.declawed = otherQuers[4];
-    querys.special_needs = otherQuers[5];
+    querys.special_needs = otherQuers[4];
 
     //calling API
     Object.keys(querys).forEach(key => {
@@ -270,8 +263,7 @@ function getOther() {
     fullvalues[1] = $('#Dogs').find(":selected").text();
     fullvalues[2] = $('#Cats').find(":selected").text();
     fullvalues[3] = $('#House').find(":selected").text();
-    fullvalues[4] = $('#Declawed').find(":selected").text();
-    fullvalues[5] = $('#Special').find(":selected").text();
+    fullvalues[4] = $('#Special').find(":selected").text();
 
     for (i = 0; i < 6; i++) {
         if (fullvalues[i] == 'No') {
